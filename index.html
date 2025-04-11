@@ -1,14 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Botón animado</title>
-  <link rel="stylesheet" href="botoncin.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barcos Navales</title>
+  <link rel="stylesheet" href="paginaes.css" />
+  <style>
+    .info {
+      display: none;
+      margin-top: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .imagen-interactiva {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .imagen-interactiva:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <button id="boton">Haz clic</button>
-  <script src="script.js"></script>
+  <header>
+    <h1>Explorando los Barcos Navales</h1>
+    <nav>
+      <ul>
+        <li><a href="https://poki.com/es/g/fury-warship" target="_blank">Ir al juego</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>¿Qué son los barcos navales?</h2>
+      <p>
+        Los barcos navales son buques diseñados para uso militar. Cumplen funciones de defensa, ataque, vigilancia y transporte en los mares y océanos.
+      </p>
+    </section>
+
+    <section class="imagenes">
+      <h2>Imágenes de barcos navales</h2>
+      <div class="galeria">
+        <div class="imagen-contenedor">
+          <img src="naval1.jpeg" alt="Buque de guerra USS Iowa" class="imagen-interactiva" onclick="mostrarInfo(0)" />
+          <div class="info">El USS Iowa es un acorazado de la clase Iowa de la Armada de EE. UU.
+            Los acorazados de la Clase Iowa fueron seis buques diseñados por la Armada de EE. UU. entre 1939 y 1940 para escoltar portaaviones en la Segunda Guerra Mundial. Solo cuatro fueron completados; los otros dos fueron cancelados. Fueron la última clase de acorazados construida por EE. UU.,
+             considerados entre los más poderosos de la historia, aunque finalmente fueron superados por los portaaviones como buques principales.
+Participaron en todos los conflictos importantes de EE. UU. en la segunda mitad del siglo XX. Durante la Segunda Guerra Mundial escoltaron portaaviones y atacaron posiciones japonesas. Luego, apoyaron en la Guerra de Corea y el New Jersey fue reactivado para la Guerra de Vietnam.
+En los años 80, los cuatro fueron modernizados con misiles y usados nuevamente. En la Guerra del Golfo (1991), el Missouri y el Wisconsin atacaron objetivos iraquíes. Finalmente, fueron desarmados en los 90 y convertidos en museos.   </div>
+        </div>
+        <div class="imagen-contenedor">
+          <img src="naval 2.jpeg" alt="Flota naval en formación" class="imagen-interactiva" onclick="mostrarInfo(1)" />
+          <div class="info">Una flota en formación muestra el poder estratégico de una armada.
+            Una flota en formación muestra la capacidad estratégica de una armada, destacando no solo su poder táctico, sino también su cohesión y preparación. Las flotas se organizan para misiones como el control marítimo, la protección de intereses nacionales y la disuasión de amenazas. Las formaciones más comunes son: en línea, para un uso efectivo del poder de fuego; en columna, para maniobras rápidas; y en cuña, para ataques rápidos y protección de la unidad principal. Además de su función en combate, la formación proyecta poder y demuestra la superioridad naval de una nación.
+          </div>
+        </div>
+        <div class="imagen-contenedor">
+          <img src="naval3.jpeg" alt="Buque moderno" class="imagen-interactiva" onclick="mostrarInfo(2)" />
+          <div class="info">Los buques modernos están equipados con alta tecnología de combate y defensa.
+            Los buques de guerra han experimentado una evolución significativa desde la antigüedad hasta la actualidad. En sus primeros tiempos, los barcos eran impulsados por remos y velas, como las trirremes griegas y los navíos romanos, utilizados para combates y abordajes. Durante la Edad Media, las galeras y los galeones empezaron a integrar cañones y mejoraron la maniobrabilidad.
+Con la Revolución Industrial en el siglo XIX, los buques de guerra se transformaron con el uso de vapor y acero, destacando el **HMS Warrior** y el **USS Monitor**. En el siglo XX, los acorazados como el **HMS Dreadnought** dominaron la guerra naval, aunque la Segunda Guerra Mundial vio el auge de los portaaviones, como el **USS Enterprise**, y el uso de submarinos nucleares como el **USS Nautilus**.
+Hoy en día, los portaaviones nucleares como el **USS Gerald R. Ford**, los destructores de misiles y submarinos nucleares continúan siendo esenciales, mientras que los buques de guerra modernos incorporan tecnología avanzada. El futuro de la guerra naval se centra en la automatización, la inteligencia artificial y los sistemas no tripulados, con una mayor dependencia de la guerra cibernética y capacidades de detección.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video">
+      <h2>Video sobre barcos navales</h2>
+      <video width="560" height="315" controls>
+        <source src="videoplayback (1).mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; ®™ pagina distribuida por SPYRITCORP</p>
+  </footer>
+
+  <script>
+    function mostrarInfo(indice) {
+      const infos = document.querySelectorAll('.info');
+      infos.forEach((info, i) => {
+        if (i === indice) {
+          info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        } else {
+          info.style.display = 'none';
+        }
+      });
+    }
+  </script>
 </body>
 </html>
-
