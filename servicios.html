@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios al Cliente</title>
+  <link rel="stylesheet" href="servicios.css" />
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("kiritonikens9@gmail.com"); 
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Atención al Cliente</h1>
+    <p>Estamos aquí para ayudarte con cualquier problema o duda.</p>
+  </header>
+
+  <main>
+    <section class="info">
+      <h2>¿Cómo podemos ayudarte?</h2>
+      <form id="service_o1e2992">
+        <ul>
+          <li>
+            📞 Soporte telefónico  
+            <input type="text" name="mensaje1" placeholder="Ingresa tu número" required>
+          </li>
+          <li>
+            📧 Soporte por correo electrónico 
+            <input type="text" name="mensaje2" placeholder="Ingresa tu correo" required>
+          </li>
+          <li>
+            📦 No solo rastrees a tu marido, también tu pedido  
+            <input type="text" name="mensaje3" placeholder="ID del pedido">
+          </li>
+          <li>
+            🔄 Devoluciones y reembolsos 
+            <input type="text" name="mensaje4" placeholder="Solicitud de reembolso">
+          </li>
+        </ul>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section class="botones">
+      <p>Este botón no hace nada pero es verdecito:</p>
+      <button id="verdecito">uwu</button>
+
+      <p>Este botón te lleva a la página inicial:</p>
+      <button onclick="window.location.href='initial.html'">volver al menú</button>
+    </section>
+  </main>
+
+  <script src="servicios.js"></script>
+</body>
+</html>
