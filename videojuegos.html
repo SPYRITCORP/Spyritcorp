@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SPYRYTCORPORATIONS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='videojuegos.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header class="header theme-sky-dark in-line" id="header">
+
+
+        <div class="in-line">
+            <img class="branding-logo"
+                 src="s.jpeg"
+                 alt ="logotipo DE SPYRYTCORPORATIONS"
+                 aria-hidden="true" />
+            <p class="branding"
+               aria-label="Bienvenido a nuestra tienda on-line:">®SPYRYTCORP™₷</p>
+        </div>
+
+
+        <div>
+            <button type="button"
+                    class=" btn-cart in-line button button-simple-empty"
+                    aria-label="Mostrar productos agregados al carrito">
+                <i class="fas fa-shopping-cart cart-icon"
+                   aria-hidden="true"
+                   aria-live="polite"></i>
+                <div class= "cart-text">
+                    <p>Carrito (<span class="cart-qty">0</span>ítems)</p>
+                </div>
+                
+            </button>
+        </div>
+    </header>
+
+
+    <section class="banner  in-stack">
+        <div>
+            <img class="banner-img" 
+                 src="bannerv.png"
+                 alt= "escritorio con productos de la 
+                       categoria electronica."
+                 aria-hidden="true" />
+        </div>
+        <div class="banner-title">
+           <h1 >GAMES SPYRYTCORP</h1> 
+        </div>
+       
+        
+    </section>
+
+
+    <main id="shop">
+
+        <section class="filters-container in-line"
+                 aria-labelledby="filters-title">
+                    
+            <aside class= "filters-aside">
+                <button
+                type="button"
+                class="close-filters-btn is-hidden"
+                aria-label="Cerrar filtros">
+                <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="filters-heading-container in-line">
+
+                    <div class="filters-title">
+                        <h2 aria-label= "Agilice la búsqueda del producto utilizando:">
+                            FILTROS</h2>
+                    </div>
+
+                    <div class="filters-clear-btn-container">
+                        <button type="button" class="clear-btn in-line"
+                                aria-label="¿Desea quitar los filtros seleccionados?">
+                            <i class="fas fa-trash-alt" aria-hidden="true"></i>
+                            <h3 class="clear-title">
+                                Limpiar
+                            </h3>
+                        </button>
+                    </div>
+
+                </div>
+                <form>
+                    <div class="filters-search-container">
+                        <div>
+                            <h3>BUSQUEDA</h3>
+                        </div>
+                        
+                        <label for="input-search" 
+                            class="input-search-container in-line">
+                            <input type="text"
+                                id="input-search"
+                                placeholder="¿Qué está buscando?"
+                                aria-label="Escriba el nombre del producto que busca">
+                            </input>
+                            <i class="fas fa-search search-icon"
+                            aria-hidden="true">
+                            </i>
+                        </label>
+                    </div>
+<button onclick="window.location.href='index.html'" class="boton-regresar">Volver al menu</button>
+                    <fieldset class="filters-category-container ">
+                        <legend>
+                            <h3 aria-label="Filtre los productos 
+                                por la categoria a la que pertenecen">
+                                CATEGORIA
+                            </h3>
+                        </legend>
+
+                        <div class="checkboxes-container input-category-container">
+                            <label for= "PlayStation" class="input-category in-line">
+                                <input type="checkbox"
+                                    class=" filter filter-category"
+                                    name="category"
+                                    value="PlayStation"
+                                    id= "PlayStation">
+                                </input>
+                                <h4>PlayStation</h4>
+                            </label>
+
+                            <label for= "xbox" class="input-category in-line">
+                                <input type="checkbox"
+                                    class="filter filter-category"
+                                    name="category" 
+                                    value="xbox"
+                                    id= "xbox">
+                                </input>
+                                <h4>xbox</h4>
+                            </label>
+
+                            <label for= "GAMEBOY" class="input-category in-line">
+                                <input type="checkbox"
+                                    class="filter filter-category"
+                                    name="category"
+                                    value="GAMEBOY"
+                                    id= "GAMEBOY">
+                                </input>
+                                <h4>GAMBOY</h4>
+                            </label>
+
+                    <fieldset class="filters-review-container">
+                        <legend>
+                            <h3 aria-label="Filtre los productos
+                            por su cantidad de estrellas de una a cinco">
+                            PUNTAJE
+                            </h3>
+                        <legend>
+
+                        <div class="filters-review">
+                            <label for="cinco" 
+                                   class="input-review in-line">
+                                <input type="checkbox"
+                                    name="review"
+                                    class="filter filter-review"
+                                    value="5"
+                                    id="cinco"
+                                    aria-label="Cantidad de estrellas:">
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <h4>(5)</h4>
+                                </input>
+                            </label>
+
+                            <label for="cuatro" 
+                                   class="input-review in-line">
+                                <input type="checkbox"
+                                    name="review" 
+                                    class="filter filter-review"
+                                    value="4"
+                                    id="cuatro"
+                                    aria-label="Cantidad de estrellas:">
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <h4>(4)</h4>
+                                </input>
+                            </label>
+
+                            <label for= "tres"
+                                   class="input-review in-line">
+                                <input type="checkbox"
+                                    name="review"
+                                    class="filter filter-review"
+                                    value="3"
+                                    id="tres"
+                                    aria-label="Cantidad de estrellas:">
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <h4>(3)</h4>
+                                </input>
+                            </label>
+
+                            <label for="dos"
+                                   class="input-review in-line">
+                                <input type="checkbox"
+                                    name="review"
+                                    class="filter filter-review"
+                                    value="2"
+                                    id="dos"
+                                    aria-label="Cantidad de estrellas:">
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <h4>(2)</h4>
+                                </input>
+                            </label>
+
+                            <label for="uno" class="input-review in-line">
+                                <input type="checkbox"
+                                    name="review"
+                                    class="filter filter-review" 
+                                    value="1"
+                                    id="uno"
+                                    aria-label="Cantidad de estrellas:">
+                                <i class="fas fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <i class="far fa-star"  aria-hidden="true"></i>
+                                <h4>(1)</h>
+                                    </input>
+                            </label>
+                        </fieldset>
+                    </div>
+            </aside>
+
+            <section class="products-container ">
+
+                <header class="products-header in-line theme-sky">
+                    <div>
+                        <p id="products-qty"
+                           aria-live="polite">Mostrando 12 producto(s) de 12</p>
+                    </div>
+                    <div class="view-buttons-container in-line ">
+                        <div>
+                            <p aria-label="Modificar la vista de la lista de productos">
+                                Ver como</p>
+                        </div>
+                        <div id="view-button-grid">
+                            <button type="button">
+                                <i class="fas fa-th"
+                                   aria-hidden="true"
+                                   title="Mosaico"></i>
+                            </button>
+                        </div>
+                        <div id="view-button-list">
+                            <button type="button">
+                                <i class="fas fa-list" 
+                                   aria-hidden="true"
+                                   title="Lista"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button
+                    type="button"
+                    class="open-filters-btn button button-simple-empty is-hidden"
+                    aria-label="Abrir filtros">
+                    <i class="fas fa-filter" aria-hidden="true"></i>
+                    <span class= "filter-text">Filtros</span>
+                   </button>
+                </header>
+
+                <div class="products-list in-grid">
+
+
+                    <article class="product"
+                             data-id="0"
+                             data-name="mortal combact" 
+                             data-category="xbox"
+                             data-price="6400"
+                             data-image="1.jpg" 
+                             data-review="3">
+
+                        <div class="product-img-container in-line">
+                            <img src="1.jpg"
+                                 alt="UwU."
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">mortal combact para xbox</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">6400</p>
+                            <div class="review filters-review"
+                                 aria-label= "Puntaje 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "0">
+                                    Comprar
+                                </button>
+                                                            
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">Mortal Kombat II para arcade y consolas clásicas es un juego de lucha lanzado en 1993. En esta entrega, los guerreros de la Tierra deben enfrentar un nuevo torneo en el oscuro reino de Outworld, organizado por el emperador Shao Kahn. El juego incluye combates uno contra uno con un elenco ampliado de personajes y presenta Fatalities más sangrientos, escenarios interactivos y movimientos especiales únicos para cada luchador.</div>
+                    </article>
+
+                    <article class="product" 
+                             data-id="1" 
+                             data-name="pac man" 
+                             data-category="PlayStation"
+                             data-price="14500" 
+                             data-image="2.jpg" 
+                             data-review="5">
+
+                        <div class="product-img-container in-line">
+                            <img src="2.jpg"
+                                 alt="UwU." 
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">pac man PlayStation</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 14500</p>
+                            <div class="review filters-review" 
+                                 aria-label= "Puntaje 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid  button-add-to-cart"
+                                        id= "1">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">Pac-Man World 3 para PlayStation 2 es un juego de plataformas lanzado en 2006. En esta entrega, Pac-Man debe enfrentarse a un nuevo villano mientras explora mundos en 3D y utiliza nuevas habilidades, como el combate cuerpo a cuerpo. </div>
+                    </article>
+                    <article class="product"
+                             data-id="2" 
+                             data-name="super mario bros" 
+                             data-category="GAMEBOY"
+                             data-price="5000" 
+                             data-image="3.jpg" data-review="2">
+                        <div class="product-img-container in-line">
+                            <img src="3.jpg"
+                                 alt="UwU."
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">  sp mario bros para GAMEBOY</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 5000</p>
+                            <div class="review filters-review" aria-label= "Puntaje 2">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "2">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">Super Mario Bros. Deluxe para Game Boy Color es un juego de plataformas lanzado en 1999. Esta versión es una adaptación del clásico de NES, donde Mario debe rescatar a la princesa Peach del malvado Bowser. El juego conserva los niveles originales, añade un sistema de guardado, desafíos extra, mapas y un modo versus, todo adaptado a la pantalla portátil del Game Boy Color. Es una versión completa y mejorada para jugar en cualquier lugar.</div>
+                    </article>
+                    <article class="product"
+                             data-id="3" 
+                             data-name="spiderman" 
+                             data-category="PlayStation"
+                             data-price="2499" 
+                             data-image="4.jpg" data-review="3">
+                        <div class="product-img-container in-line">
+                            <img src="4.jpg"
+                                 alt="UwU."
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">spiderman para PlayStation</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 2499</p>
+                            <div class="review filters-review"
+                                 aria-label= "Puntaje 3">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button" 
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "3">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">**Spider-Man: Web of Shadows para PlayStation 3** es un juego de acción y mundo abierto lanzado en 2008. En esta entrega, Spider-Man debe enfrentar una invasión simbiótica que amenaza con destruir Nueva York. El jugador puede alternar entre el traje clásico rojo y azul y el traje negro con poderes mejorados, lo que afecta tanto la jugabilidad como la historia. Con un sistema de combate ágil, decisiones morales y la participación de otros héroes y villanos del universo Marvel, el juego ofrece una experiencia dinámica centrada en el estilo de lucha de Spider-Man y su mundo urbano.</div>
+                    </article>
+                    <article class="product"
+                             data-id="4" 
+                             data-name="kung fu panda" 
+                             data-category="xbox"
+                             data-price="12600" 
+                             data-image="5.jpg" 
+                             data-review="5">
+                        <div class="product-img-container in-line">
+                            <img src="5.jpg"
+                                 alt="UwU."
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">kung fu panda para xbox</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 12600</p>
+                            <div class="review filters-review" 
+                                 aria-label= "Puntaje 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "4">
+                                    Comprar
+                                </button>
+                            </div>
+                            
+                        </div>
+                        <div class="product-description is-hidden">Kung Fu Panda para Xbox 360 es un juego de acción y plataformas lanzado en 2008, basado en la película animada de DreamWorks. Desarrollado por Luxoflux y publicado por Activision, el juego sigue las aventuras de Po, un panda que sueña con convertirse en un maestro del kung fu. A lo largo de 13 niveles, los jugadores controlan a Po mientras aprende técnicas de combate y enfrenta a enemigos como Tai Lung, el Gran Gorila y la Banda del Cocodrilo Dorado Imperial. El juego ofrece modos para un jugador y multijugador, permitiendo a los jugadores experimentar la historia de la película y más allá</div>
+                    </article>
+                    <article class="product" 
+                             data-id="5" 
+                             data-name="call of duty" 
+                             data-category="xbox"
+                             data-price="32000" 
+                             data-image="6.jpg" 
+                             data-review="1">
+                        <div class="product-img-container in-line">
+                            <img src="6.jpg"
+                                 alt="UwU."
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">call of duty para xbox</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 32000</p>
+                            <div class="review filters-review" aria-label= "Puntaje 1">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "5">
+                                    Comprar
+                                </button>
+                            </div>
+                            
+                        </div>
+                        <div class="product-description is-hidden">Call of Duty: Modern Warfare 2 para Xbox 360 es un juego de disparos en primera persona lanzado en 2009. En esta entrega, los jugadores asumen el papel de soldados de élite en una guerra moderna, enfrentándose a amenazas globales. El juego ofrece una campaña intensa con misiones en diversos escenarios, así como un modo multijugador competitivo que se convirtió en un referente para los juegos de disparos en línea.</div>
+                    </article>
+                    <article class="product"
+                             data-id="6" 
+                             data-name="street fighters" 
+                             data-category="PlayStation"
+                             data-price="25001" 
+                             data-image="7.jpg" 
+                             data-review="3">
+                        <div class="product-img-container in-line">
+                            <img src="7.jpg"
+                                 alt="UwU."
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">street fighters para PlayStation</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 25001</p>
+                            <div class="review filters-review"
+                                 aria-label= "Puntaje 3">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "6">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">Street Fighter para PlayStation (PS1) es un juego de lucha 2D lanzado en 1995. Esta versión es una adaptación del juego original de 1987, donde los jugadores enfrentan combates uno contra uno contra una serie de oponentes para convertirse en el campeón mundial. Aunque su jugabilidad es más básica y menos pulida que la secuela, incluye movimientos especiales icónicos y fue el inicio de la famosa saga.
+
+</div>
+                    </article>
+                    <article class="product" 
+                             data-id="7" 
+                             data-name="street fightersII"
+                             data-category="PlayStation" 
+                             data-price="2200" 
+                             data-image="8.jpg"
+                             data-review="2">
+                        <div class="product-img-container in-line">
+                            <img src="8.jpg"
+                                 alt="UwU."
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">street fighters II para play PlayStation</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 2200</p>
+                            <div class="review filters-review"
+                                 aria-label= "Puntaje 2">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "7">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">Street Fighter II: The World Warrior para PlayStation (PS1) es un juego de lucha 2D lanzado en 1995. Esta versión trae la experiencia clásica del arcade con un elenco de luchadores internacionales, cada uno con movimientos especiales y combos únicos. El juego incluye modos para un jugador y multijugador, permitiendo enfrentamientos emocionantes y la posibilidad de dominar técnicas como el Hadouken o el Shoryuken.
+
+</div>
+                    </article>
+                    <article class="product" 
+                             data-id="8" 
+                             data-name="pokemon" 
+                             data-category="GAMEBOY"
+                             data-price="34000" 
+                             data-image="9.jpg" data-review="4">
+                        <div class="product-img-container in-line">
+                            <img src="9.jpg"
+                                 alt="UwU."
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">pokemon para GAMEBOY</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 34000</p>
+                            <div class="review filters-review"
+                                 aria-label= "Puntaje 4">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "8">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">**Pokémon Red y Blue para Game Boy** son juegos de rol lanzados en 1996 (Japón) y 1998 (internacionalmente). En esta aventura, el jugador asume el rol de un entrenador Pokémon que debe capturar, entrenar y combatir con criaturas llamadas Pokémon para convertirse en el campeón de la Liga Pokémon. El juego incluye 151 especies, intercambios y batallas entre jugadores mediante el cable link del Game Boy, sentando las bases para una de las franquicias más exitosas del mundo.
+</div>
+                    </article>
+                    <article class="product" 
+                             data-id="9" 
+                             data-name="the king of fighters" 
+                             data-category="GAMEBOY"
+                             data-price="14500" 
+                             data-image="10.jpg" data-review="3">
+                        <div class="product-img-container in-line">
+                            <img src="10.jpg"
+                                 alt="UwU. "
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">the king of fighters para GAMEBOY</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 14500</p>
+                            <div class="review filters-review"
+                                 aria-label= "Puntaje 3">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "9">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">The King of Fighters R-2 para Game Boy Color es un juego de lucha lanzado en 1999. En esta versión portátil de la famosa serie de lucha de SNK, los jugadores controlan equipos de tres combatientes para enfrentarse en combates rápidos y estratégicos. Aunque simplificado respecto a las versiones de consola, conserva muchos personajes icónicos y movimientos especiales, ofreciendo una experiencia de pelea accesible para jugar en cualquier lugar.</div>
+                    </article>
+                    <article class="product" 
+                             data-id="10" 
+                             data-name="dragonball Z" 
+                             data-category="xbox"
+                             data-price="16000" 
+                             data-image="11.jpg" 
+                             data-review="4">
+                        <div class="product-img-container in-line">
+                            <img src="11.jpg"
+                                 alt="UwU." 
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name"> dragonball z para xbox 360</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 16000</p>
+                            <div class="review filters-review"
+                                 aria-label= "Puntaje 4">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="far fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button"
+                                        class="button button-simple-solid button-add-to-cart"
+                                        id= "10">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">Este juego ofrece combates en 3D con un sistema de lucha simplificado y una historia que sigue los eventos del anime. Incluye un modo "Hero Mode" donde puedes crear tu propio personaje y participar en una narrativa original. Aunque recibió críticas mixtas, es una opción para quienes buscan una experiencia más accesible.
+
+</div>
+                    </article>
+                    <article class="product" 
+                             data-id="11" 
+                             data-name="saint seiya" 
+                             data-category="PlayStation"
+                             data-price="4999" 
+                             data-image="12.jpg" data-review="5">
+                        <div class="product-img-container in-line">
+                            <img src="12.jpg" 
+                                 alt="UwU." 
+                                 class="product-img" />
+                        </div>
+
+                        <div class="product-content in-stack">
+                            <h2 class="product-name">saint seiya para ps2</h2>
+                            <p class="product-price"
+                               aria-label="Precio en pesos mexicanos:">$ 4999</p>
+                            <div class="review filters-review"
+                                 aria-label= "Puntaje 5">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+                                <button type="button" class="button button-simple-solid button-add-to-cart"
+                                id= "11">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-description is-hidden">Secuela directa del anterior, este juego cubre la Saga de Hades, donde los Caballeros de Bronce deben enfrentarse a los espectros del inframundo. Mantiene el estilo de lucha en 3D y mejora aspectos como la movilidad y los ataques especiales. Introduce nuevos personajes como Kanon de Géminis y Orfeo de Lira, y ofrece modos adicionales como el "Modo Batalla Eterna".</div>
+                    </article>
+            </section>
+
+    </main>
+
+    <footer class="footer-main in-line theme-sky-dark">
+        <div class="logo-container in-line">
+            <img src="s.jpeg" 
+                 alt ="logotipo de Ada Shops"
+                 class="logo" />
+            <p>®SPYRYTCORP te agradece por tu preferencia™₷</p>
+        </div>
+    </footer>
+
+    <div class="header-menu-add-to-card theme-sky-dark menu-add-to-card-hidde is-hidden ">
+        <div class="cart-container in-stack">
+            <div class="cart-title-container in-line">
+                <h2>CARRITO</h2>
+                <button type="button" class="btn-close">
+                    <i class="far fa-window-close"></i>
+                </button>
+            </div>
+            <div class= "cart-full"> 
+                <div class="in-line">
+                <p><span class="cart-qty">0</span> producto(s) agregado(s)</p>
+            </div>
+            <div class="cart-products-added">
+
+            </div>
+            <div class="subtotal-container in-line">
+                <p> Subtotal $ <span class="cart-subtotal-value">0</span></p>
+            </div>
+            <div class=" add-to-card-buttons in-stack">
+                <button type="button" class="btn-buy  in-line button
+                button-simple-solid-reverse">
+                    COMPRAR
+                </button>
+                
+                <button type="button" class="btn-empty-cart in-line button
+                button-simple-empty ">
+                    VACIAR
+                </button>   
+            </div>     
+        </div>
+            <div class="cart-empty is-hidden">
+                <p class="cart-empty-msg ">
+                    No tienes productos en el carrito, ¡visita nuestra seleccion uwu!
+                </p>
+            </div>      
+        </div>
+    </div>
+    <div class="menu-checkout in-stack is-hidden">
+        <h2 class="checkout-title">Checkout</h2>
+        <div class= "checkout-container in-line">
+            <div class= "form-container">
+                <form>
+                    <fieldset class="checkout-info in-stack">             
+                        <div class="checkout-personal-info">
+                            <legend class="info-title">Datos Personales</legend>
+                            <div class="checkout-personal-info-inputs ">
+                                <label for= "nameAndSurname">
+                                    Nombre y apellido *
+                                    <input type="text" 
+                                        placeholder="no soy adivino pon el name" 
+                                        name="Nombre y Apellido" required 
+                                        id="nameAndSurname" />
+                                </label>
+                                <label for="email">
+                                    Email *
+                                    <input type="email" 
+                                        placeholder="ingresa tu papumail@" required
+                                        id="email" />
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="checkout-payment in-stack">
+                        <div class="checkout-section-container in-stack">
+                            <legend class="info-title">Opciones de pago</legend>
+                            <label for="cash-debit">
+                                <input type="radio" 
+                                       class= "pay-option"
+                                       name="payment" 
+                                       value="cash-debit" 
+                                       checked 
+                                       id="cash-debit"/>
+                                       Efectivo / Débito
+                                </input>
+                            </label>
+                            <label for="credit">
+                                <input type="radio" 
+                                       class= "pay-option"
+                                       name="payment" 
+                                       value="credit" 
+                                       id="credit"/>
+                                       Tarjeta de crédito
+                                </input>
+                            </label>
+                            <label for="delivery">
+                                <input type="checkbox" 
+                                       class= "pay-option"
+                                       name="delivery" 
+                                       id="delivery"/> 
+                                        envío
+                            </label>
+                            <label for="discount">
+                                <input type="checkbox" 
+                                       class= "pay-option"
+                                       name="discount" 
+                                       id="discount"/> 
+                                       tarjeta de descuento
+                            </label>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        
+            <div class="cart-totals in-stack">
+                <h3 class="info-title">Resumen</h3>
+                <div>
+                    <p class="cart-subtotal">
+                        Subtotal $ <span class="cart-subtotal-value">0</span>
+                    </p>
+                    <p class="cart-tax is-hidden">
+                        Recargo $<span class="cart-tax-value">0</span>
+                    </p>
+                    <p class="cart-discount is-hidden">
+                        Descuento 10% $<span class="cart-discount-value">0</span>
+                    </p>
+                    <p class="cart-delivery is-hidden">
+                        Envío $<span class="cart-delivery-value">0</span>
+                    </p>
+                    <p class="cart-total">
+                        Total: $ <span class="cart-total-value">0</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer class="footer-checkout in-line">
+            <button type="button" class="btn-cancel-buy button button-simple-solid">
+                Seguir comprando
+            </button>
+            <button type="button" class="btn-finish-buy button button-simple-solid-reverse">
+                realizar pago
+            </button>
+        </footer>
+    </div>
+
+    <div class="modal-empty-cart in-stack is-hidden"  
+         aria-role="dialog"
+         aria-modal="true"
+         aria-describedby="empty-cart-description"
+         aria-hidden="true">
+
+        <p class="modal-message" id="empty-cart-description">
+            Estás por vaciar el carrito, ¿quieres continuar?
+        </p>
+        <footer class="modal-btn-container">
+            <button type="button" class="button button-simple-solid-reverse cancel-empty-cart-btn">
+                Cancelar
+            </button>
+            <button type="button" class="button button-simple-solid confirm-cart-empty-btn">
+                Vaciar
+            </button>
+        </footer>
+    </div>
+    <div class="overlay is-hidden" id="overlay"></div>    
+        <script src="videojuegos.js"></script>
+
+</body>
+<div id="cart-notification" class="notification-hidden">
+    <img src="check.png" alt="Producto añadido" class="notification-img" />
+    <span class="notification-text">¡Producto añadido al carrito!</span>
+</div>
+</html>
