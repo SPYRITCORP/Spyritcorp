@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: #e9eff5;
+  color: #333;
+}
+
+header {
+  background-color: #0e1a2b;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+main {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  background: transparent; /* Eliminado fondo blanco */
+  border-radius: 16px;
+  box-shadow: none; /* Sin sombra para eliminar efecto de cuadro */
+}
+
+.contact-modal {
+  display: block; /* Cambia a none si lo quieres oculto al cargar */
+}
+
+.contact-modal-content {
+  background: transparent; /* Eliminado fondo blanco del modal */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: none; /* Sin sombra */
+}
+
+.close-contact-modal {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info ul li {
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info input[type="text"],
+.info input[type="email"],
+.info textarea {
+  padding: 0.75rem;
+  margin-top: 0.3rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: #f8f9fa; /* Color muy claro, sin blanco puro */
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info input:focus,
+.info textarea:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 8px rgba(0,119,204,0.2);
+  outline: none;
+}
+
+.info textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button[type="submit"] {
+  padding: 0.9rem 2rem;
+  background-color: #0e1a2b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form button:hover {
+  background-color: #142c47;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .info ul li {
+    font-size: 1rem;
+  }
+
+  button, form button[type="submit"] {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+}
